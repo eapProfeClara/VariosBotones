@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:onClick="clickCancelar"
+        android:text="@string/btCancelar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btAceptar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/btCancelar" />
+
+    <Button
+        android:id="@+id/btAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="166dp"
+        android:text="@string/btAceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btCancelar"
+        tools:layout_alignParentLeft="true"
+        tools:text="@string/btAceptar" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/bt1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt2"
+        app:layout_constraintEnd_toStartOf="@+id/bt2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/bt1" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt1"
+        android:layout_marginTop="154dp"
+        android:layout_toStartOf="@+id/bt3"
+        android:layout_toLeftOf="@+id/bt3"
+        android:layout_toEndOf="@+id/btAceptar"
+        android:layout_toRightOf="@+id/btAceptar"
+        android:text="@string/bt2"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/bt2" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/bt3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt2"
+        tools:text="@string/bt3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
